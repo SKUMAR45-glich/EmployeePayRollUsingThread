@@ -34,6 +34,11 @@ namespace EmployeePayRollThreadingTest
             
             employeePayRollOperation.AddEmployeeToPayroll(employeeDetails);
 
+
+            //Implementation WithThread
+
+            employeePayRollOperation.AddEmployeeToPayrollWithThread(employeeDetails);
+
             Console.WriteLine();
 
         }
