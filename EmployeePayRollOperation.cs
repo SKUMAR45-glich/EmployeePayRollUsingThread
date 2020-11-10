@@ -22,6 +22,7 @@ namespace EmployeePayRollThreading
             }
             );
             Console.WriteLine(this.employeeDetails.ToString());
+            Console.WriteLine(this.employeeDetails.Count);
         }
 
 
