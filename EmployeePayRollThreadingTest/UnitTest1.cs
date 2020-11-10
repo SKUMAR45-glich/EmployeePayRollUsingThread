@@ -31,13 +31,16 @@ namespace EmployeePayRollThreadingTest
 
 
             //Implementation Without Thread
-            
+            DateTime startDateTime = DateTime.Now;
             employeePayRollOperation.AddEmployeeToPayroll(employeeDetails);
+            DateTime stopDateTime = DateTime.Now;
+            Console.WriteLine("Duration without thread: " + (stopDateTime - startDateTime));
 
-
+            DateTime startDateTimeThread = DateTime.Now;
             //Implementation WithThread
-
             employeePayRollOperation.AddEmployeeToPayrollWithThread(employeeDetails);
+            DateTime stopDateTimeThread = DateTime.Now;
+            Console.WriteLine("Duration with Thread: " + (stopDateTimeThread - startDateTime));
 
             Console.WriteLine();
 
