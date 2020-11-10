@@ -12,7 +12,7 @@ namespace EmployeePayRollThreading
 
 
         //Add Employee To Payroll without Using Thread
-        public void AddEmployeeToPayroll(List<EmployeeDetails> employeePayRollDetails)
+        public void addEmployeeToPayroll(List<EmployeeDetails> employeePayRollDetails)
         {
             employeePayRollDetails.ForEach(employeeData =>
             {
@@ -26,7 +26,7 @@ namespace EmployeePayRollThreading
 
 
         //Add Employee To Payroll By Using Thread
-        public void AddEmployeeToPayrollWithThread(List<EmployeeDetails> employeeDetails)
+        public void addEmployeeToPayrollWithThread(List<EmployeeDetails> employeeDetails)
         {
             employeeDetails.ForEach(employeeData =>
             {

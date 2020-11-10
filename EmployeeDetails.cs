@@ -10,6 +10,18 @@ namespace EmployeePayRollThreading
 {
     public class EmployeeDetails
     {
+        public EmployeeDetails(int EmployeeID, string EmployeeName, string PhoneNumber, string Address, string Department, char Gender, string City, int BasicPay)
+        {
+            this.EmployeeID = EmployeeID;
+            this.EmployeeName = EmployeeName;
+            this.PhoneNumber = PhoneNumber;
+            this.Address = Address;
+            this.Department = Department;
+            this.Gender = Gender;
+            this.City = City;
+            this.BasicPay = BasicPay;
+        }
+
         //Constructor with parameters
 
         public EmployeeDetails(int EmployeeID, string EmployeeName, string PhoneNumber, string Address, string Department, char Gender, string City, int BasicPay, int TaxablePay, int Tax, string Country)
